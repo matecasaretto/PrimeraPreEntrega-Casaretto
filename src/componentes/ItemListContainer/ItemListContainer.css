@@ -1,0 +1,11 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
+.botones button{
+    margin: 10px;
+}
