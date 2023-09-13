@@ -2,7 +2,7 @@
   "name": "e-comercecoder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://matecasaretto.github.io/react-github-pages/build",
+  "homepage": "https://matecasaretto.github.io/PrimeraPreEntrega-Casaretto/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
