@@ -1,0 +1,22 @@
+.producto{
+    height: 150px;
+}
+
+.item-container{
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(91, 155, 246);
+    border: 2px solid black;
+}
+
+.contenedor-principal{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.imagen-item{
+    height: 150px;
+}

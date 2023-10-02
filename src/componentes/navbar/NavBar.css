@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Color de fondo, puedes personalizarlo */
+    color: white; /* Color del texto, puedes personalizarlo */
+    padding: 10px; /* Ajusta el espaciado según tus preferencias */
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .center {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espacio entre los elementos en el centro, puedes personalizarlo */
+  }
+  
+  .right {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }

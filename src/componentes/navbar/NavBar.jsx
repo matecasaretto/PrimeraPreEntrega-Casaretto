@@ -2,37 +2,31 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import CartWidget from '../CartWidget/CartWidget';
+import CartWidget from '../CartWidget/CartWidget'
+import { Link } from 'react-router-dom';
 
-function NavBar({children}) {
+
+function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">TECNOLOGY STORE</Navbar.Brand>
+        <Navbar.Brand>Shop Tecnology</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#link">Sobre Nosotros</Nav.Link>
-            <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Perifericos</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2"> Pc Armadas </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Componentes</NavDropdown.Item>
+            <Nav.Link as={Link} to={'/'} >Home</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to={'/category/computadora'}>Notebooks</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={'/category/celular'}>Celulares</NavDropdown.Item>
+            < NavDropdown.Item as={Link} to={'/category/perifericos'}>Periféricos</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
+        <CartWidget/>
       </Container>
-      <CartWidget>
-
-      {children}
-
-      </CartWidget>
-      
     </Navbar>
-    
   );
 }
-
 
 export default NavBar;
