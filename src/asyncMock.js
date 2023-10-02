@@ -2,7 +2,7 @@ const products = [
     {
         id: '1',
         name: 'MacBokkAir',
-        price: 30000,
+        price: 3000,
         category: 'computadora',
         img: 'https://bl-i.thgim.com/public/incoming/fk5hrs/article67097604.ece/alternates/FREE_1200/MacBookAir%2015inch_5.JPG',
         stock: 25,
