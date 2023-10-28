@@ -1,0 +1,40 @@
+.ProductCard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f5f5f5;
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+  }
+  
+  .Counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .Controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .Button {
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Texto blanco */
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 16px;
+  }
+  
+  .Number {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  .Button.Disabled {
+    background-color: #ccc; /* Color gris para botón deshabilitado */
+    cursor: not-allowed;
+  }

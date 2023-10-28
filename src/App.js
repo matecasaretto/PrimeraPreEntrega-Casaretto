@@ -2,21 +2,26 @@ import './App.css';
 import NavBar from './componentes/navbar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import ItemDeatailContainer from './componentes/ItemDetailContainer/ItemDeatailContainer';
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDeatailContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Cart from './componentes/cart/Cart';
+
+import { CartProvider } from './Context/CarritoContext';
 
 function App() {
-
   return (
     <div>
       <BrowserRouter>
-        <NavBar/>
-        <Routes>
-          <Route path='/' element={<ItemListContainer/>}/>
-          <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
-          <Route path='/item/:itemId' element={<ItemDeatailContainer/>}/>
-          <Route path='#' element={<h1>404 NOT FOUND</h1>}/>
-        </Routes>
+        <CartProvider>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/category/:categoryId' element={<ItemListContainer />} />
+            <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='#' element={<h1>404 NOT FOUND</h1>} />
+          </Routes>
+        </CartProvider>
       </BrowserRouter>
     </div>
   );

@@ -2,21 +2,21 @@ import React from 'react'
 import "./Item.css"
 import { Link } from 'react-router-dom'
 
-const Item = ({id, name, img, price, stock}) => {
+const Item = ({id, titulo, imgUrl, precio, stock}) => {
   return (
     <div className='contenedor-principal'>
       <section className='item-container'>
        <div>
         <h2>
-          {name}
+          {titulo}
         </h2>
        </div>
        <picture>
-        <img className='imagen-item' src={img} alt={name}/>
+        <img className='imagen-item' src={imgUrl} alt={titulo}/>
        </picture>
        <div>
         <p>
-          precio: {price}
+          precio: {precio}
         </p>
         <p>
           Stock disponible: {stock}
